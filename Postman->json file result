@@ -1,0 +1,361 @@
+{
+	"id": "8417e919-0bf2-468d-83ea-ef34ce0bd56b",
+	"name": "Functional testing",
+	"timestamp": "2025-08-02T10:14:27.114Z",
+	"collection_id": "45877719-f3a2dbe3-1ede-470e-a847-e6060a000567",
+	"folder_id": 0,
+	"environment_id": "45877719-e4dde430-fd20-4175-9adf-8861e3b39542",
+	"totalPass": 19,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-08-02T10:14:20.934Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "53a5ccc5-1d8e-4a81-a9be-1f841bbcb6f2",
+			"name": "Generate new API key",
+			"url": "https://template.postman-echo.com/api/v1/auth",
+			"time": 1130,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1130
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "39c9c602-c086-4844-8d80-533402b80732",
+			"name": "Create \"from\" account",
+			"url": "https://template.postman-echo.com/api/v1/accounts",
+			"time": 267,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				267
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8f73e976-8080-4cb4-bc64-d7f86cfa1f87",
+			"name": "Create \"to\" account",
+			"url": "https://template.postman-echo.com/api/v1/accounts",
+			"time": 241,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				241
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "fada8554-37af-4ba4-9278-281129e7e389",
+			"name": "Transfer 500 coins to \"to\" account",
+			"url": "https://template.postman-echo.com/api/v1/transactions",
+			"time": 238,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				238
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "410bcd80-bc61-4a3e-b0af-a6e55c632b0b",
+			"name": "Test 001 - Validate account added to system",
+			"url": "https://template.postman-echo.com/api/v1/accounts",
+			"time": 263,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Content-Type header is application/json": true,
+				"Account created in setup exists in list of accounts": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Account created in setup exists in list of accounts": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				263
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Content-Type header is application/json": true,
+					"Account created in setup exists in list of accounts": true
+				}
+			]
+		},
+		{
+			"id": "c11ab3e2-3990-4742-84d9-633e1748624e",
+			"name": "Test 002 - Validate account balance",
+			"url": "https://template.postman-echo.com/api/v1/accounts/2436995",
+			"time": 247,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Content-Type header is application/json": true,
+				"Account balance adjusted correctly": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Account balance adjusted correctly": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				247
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Content-Type header is application/json": true,
+					"Account balance adjusted correctly": true
+				}
+			]
+		},
+		{
+			"id": "50255971-24fa-4d2e-b757-d74e1682763c",
+			"name": "Test 003 - Validate transaction details",
+			"url": "https://template.postman-echo.com/api/v1/transactions",
+			"time": 277,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Content-Type header is application/json": true,
+				"Transaction amount set correctly": true,
+				"Transaction currency set correctly": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Transaction amount set correctly": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Transaction currency set correctly": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				277
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Content-Type header is application/json": true,
+					"Transaction amount set correctly": true,
+					"Transaction currency set correctly": true
+				}
+			]
+		},
+		{
+			"id": "d3f3ff25-4330-4bc8-b9ff-0820633dad25",
+			"name": "Delete toAccount",
+			"url": "https://template.postman-echo.com/api/v1/accounts/2436995",
+			"time": 265,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				265
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5e49b26b-d6ee-4aca-8804-b3a9fef687fd",
+			"name": "Delete fromAccount",
+			"url": "https://template.postman-echo.com/api/v1/accounts/2436994",
+			"time": 257,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				257
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3185,
+	"collection": {
+		"requests": [
+			{
+				"id": "53a5ccc5-1d8e-4a81-a9be-1f841bbcb6f2",
+				"method": "GET"
+			},
+			{
+				"id": "39c9c602-c086-4844-8d80-533402b80732",
+				"method": "POST"
+			},
+			{
+				"id": "8f73e976-8080-4cb4-bc64-d7f86cfa1f87",
+				"method": "POST"
+			},
+			{
+				"id": "fada8554-37af-4ba4-9278-281129e7e389",
+				"method": "POST"
+			},
+			{
+				"id": "410bcd80-bc61-4a3e-b0af-a6e55c632b0b",
+				"method": "GET"
+			},
+			{
+				"id": "c11ab3e2-3990-4742-84d9-633e1748624e",
+				"method": "GET"
+			},
+			{
+				"id": "50255971-24fa-4d2e-b757-d74e1682763c",
+				"method": "GET"
+			},
+			{
+				"id": "d3f3ff25-4330-4bc8-b9ff-0820633dad25",
+				"method": "DELETE"
+			},
+			{
+				"id": "5e49b26b-d6ee-4aca-8804-b3a9fef687fd",
+				"method": "DELETE"
+			}
+		]
+	}
+}
